@@ -1,0 +1,35 @@
+@font-face {
+  font-family: ProductSans;
+  src: url("./fonts/ProductSans-Regular.woff");
+}
+body {
+  font-family: ProductSans;
+  font-size: 20px;
+}
+.MuiAppBar-colorPrimary {
+  background-color: #974578 !important;
+}
+.back-page {
+  height: calc(100vh - 64px);
+}
+.side-nav {
+  height: calc(100vh - 64px);
+  background-color: white;
+
+  box-shadow: 1px 1px 1px 1px rgb(245, 237, 237);
+}
+.Mui-focused {
+  color: #974578 !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #974578 !important;
+}
+.pageCont {
+  overflow-y: scroll;
+  height: calc(100vh - 64px);
+  padding-bottom: 20px;
+}
+* {
+  outline: none !important;
+}
