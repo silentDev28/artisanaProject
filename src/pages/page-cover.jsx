@@ -23,6 +23,7 @@ import categoryDetails from "./category/categoryDetails";
 import CategoryUpdate from "./category/updateCategory";
 import allRequest from "./requests/allRequest";
 import RequestDetails from "./requests/requestDetails";
+import Settings from "../pages/settings/settings";
 class PageCover extends Component {
   state = {};
   render() {
@@ -69,6 +70,7 @@ class PageCover extends Component {
             component={RequestDetails}
           ></Route>
           <Route path="/request" component={allRequest}></Route>
+          <Route path="/settings" component={Settings}></Route>
         </Switch>
       </div>
     );

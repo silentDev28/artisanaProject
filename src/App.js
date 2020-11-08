@@ -18,7 +18,7 @@ const App = ({ adminStatus }) => {
                 <div className="col-lg-3 side-nav">
                   <Routers />
                 </div>
-                <div className="col">
+                <div className="col" style={{ padding: "0px" }}>
                   <PageCover />
                 </div>
               </div>
