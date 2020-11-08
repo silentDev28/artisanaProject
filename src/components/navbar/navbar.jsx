@@ -59,7 +59,7 @@ function NavBar({ adminStatus }) {
               Artiasana
             </Typography>
 
-            <NotificationDrawer />
+            {/* <NotificationDrawer /> */}
             <ProfileDropDown />
           </Toolbar>
         )}

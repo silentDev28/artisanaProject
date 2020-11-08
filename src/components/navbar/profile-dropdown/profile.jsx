@@ -4,6 +4,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import UserImage from "../user-image/user-image";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 function ProfileDropDown({ sendLogout }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -37,7 +38,9 @@ function ProfileDropDown({ sendLogout }) {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
+        <Link to="/settings" style={{ color: "black" }}>
+          <MenuItem onClick={handleClose}>Profile</MenuItem>
+        </Link>
         <MenuItem onClick={handleLogout}>Logout</MenuItem>
       </Menu>
     </div>
