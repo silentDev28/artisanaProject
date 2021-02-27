@@ -36,6 +36,7 @@ class InputComponent extends Component {
     await data
       .json()
       .then((data) => {
+        console.log(data);
         if (data.hasErrors === true) {
           this.setState({
             loader: false,
